@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:github": "ng build --base-href ./ && rm -rf ./docs && mv ./dist/bases/browser ./docs && rm -rf ./dist"
   },
   "private": true,
   "dependencies": {
